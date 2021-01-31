@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AttractiveCalculator</title>
+    <link rel="stylesheet" href="AttractiveCalculator.css">
+</head>
+<body>
+    <section>
+        <h1>Online Calculator</h1>
+        <h2>Make by Naiem Islam</h2>
+    </section>
+    <section class="body">
+        <form action="AttractiveCalculator.html" name="form1" class="calci" method="POST">
+            <input type="text" name="answer" id="display">
+            <br>
+            <br>
+            <input type="button" value="C" class="btndesign" onclick="form1.answer.value=''">
+            <input type="button" value="<" class="btndesign" onclick="form1.answer.value=form1.answer.value.substring(0,form1.answer.value.length*1-1)">
+            <input type="button" value="00" class="btndesign" onclick="form1.answer.value+='00'">
+            <input type="button" value="/" class="oparator" onclick="form1.answer.value+='/'">
+            <br><br>
+            <input type="button" value="7" class="btndesign" onclick="form1.answer.value+='7'">
+            <input type="button" value="8" class="btndesign" onclick="form1.answer.value+='8'">
+            <input type="button" value="9" class="btndesign" onclick="form1.answer.value+='9'">
+            <input type="button" value="*" class="oparator" onclick="form1.answer.value+='*'">
+            <br><br>
+            <input type="button" value="4" class="btndesign" onclick="form1.answer.value+='4'">
+            <input type="button" value="5" class="btndesign" onclick="form1.answer.value+='5'">
+            <input type="button" value="6" class="btndesign" onclick="form1.answer.value+='6'">
+            <input type="button" value="-" class="oparator" onclick="form1.answer.value+='-'">
+            <br><br>
+            <input type="button" value="1" class="btndesign" onclick="form1.answer.value+='1'">
+            <input type="button" value="2" class="btndesign" onclick="form1.answer.value+='2'">
+            <input type="button" value="3" class="btndesign" onclick="form1.answer.value+='3'">
+            <input type="button" value="+" class="oparator" onclick="form1.answer.value+='+'">
+            <br><br>
+            <input type="button" value="0" class="zero" onclick="form1.answer.value+='0'">
+            <input type="button" value="." class="btndesign" onclick="form1.answer.value+='.'">
+            <input type="button" value="=" class="oparator" onclick="form1.answer.value=eval(form1.answer.value">
+        </form>
+    </section>
+</body>
+</html>
